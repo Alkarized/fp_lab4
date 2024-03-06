@@ -3,7 +3,7 @@
    [reagent.core :as reagent :refer [atom]]
    [reagent.dom :as rd]
    [clojure.edn :as edn]
-   [ajax.core :refer [GET POST PUT]]))
+   [ajax.core :refer [GET]]))
 
 (enable-console-print!)
 
@@ -93,7 +93,7 @@
                                           (reset! selected-tool tool)
                                           (reset! show-popup-tool? true)
                                           (reset! is-on-popup-tool? false))
-                           :onMouseOut (fn [event] (reset! show-popup-tool? false))}
+                           :onMouseOut (fn [_event] (reset! show-popup-tool? false))}
                    (str (:tool-name tool))
                    [:br]])])
 

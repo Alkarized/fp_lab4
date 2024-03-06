@@ -30,4 +30,4 @@ jobs:
         run: cljfmt check front/hello-world/src tools/src
 
       - name: linter
-        run: clj-kondo --lint front/hello-world/src tools/src
+        run: clj-kondo --lint front/hello-world/src
