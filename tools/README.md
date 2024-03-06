@@ -1,19 +1,11 @@
-# tools
+# Серверная часть приложения 
 
-FIXME
+Для запуска используйте команду: 
 
-## Prerequisites
+```bash
+lein ring server-headless $PORT
+```
 
-You will need [Leiningen][] 2.0.0 or above installed.
+Необходимо выбрать порт, иначе бэкенд запустится на порте 3000 автоматически.
 
-[leiningen]: https://github.com/technomancy/leiningen
-
-## Running
-
-To start a web server for the application, run:
-
-    lein ring server
-
-## License
-
-Copyright © 2024 FIXME
+```server-headless``` - Означает запуск приложения без открытия окна, можно запустить просто написав ```server```
